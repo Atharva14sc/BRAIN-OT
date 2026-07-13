@@ -1,5 +1,4 @@
 # BRAIN-OT
-
 ### Behavioral Risk-Aware Adaptive Industrial Network Defense Platform
 
 ## 🚧 Project Status
@@ -39,7 +38,7 @@ The primary objectives of BRAIN-OT are:
 
 - Develop and implement the "Behavioral Adaptive Trust Index (BATI)" to continuously evaluate the trustworthiness of industrial devices based on their behavioral characteristics.
 
-- Detect suspicious device behavior trough AI-assisted anomaly detection and network intrusion detection techniques.
+- Detect suspicious device behavior through AI-assisted anomaly detection and network intrusion detection techniques.
 
 - Automate incident response by dynamically applying security actions based on the calculated trust level of monitored devices.
 
