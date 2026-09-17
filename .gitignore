@@ -21,6 +21,12 @@ dist/
 
 *.db
 
+# Ignore datasets
+datasets/
+
+# Ignore trained models
+models/
+
 .DS_Store
 Thumbs.db
 desktop.ini
