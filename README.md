@@ -3,7 +3,9 @@
 
 ## 🚧 Project Status
 
-**Status:** Under Development (Prototype Phase)
+**Status**: Phase 1 Completed ✅
+Current Development: Phase 2 – IDS & AI Integration
+Expected Completion: December 2026
 
 Expected Completion: December 2026
 
@@ -60,11 +62,25 @@ Applies machine learning techniques to distinguish normal operational behavior f
 ### ⭐ Behavioral Adaptive Trust Index (BATI)
 Continuously evaluates the trustworthiness of industrial devices by analyzing anomaly scores, communication confidence, protocol consistency, attack history, and recovery behavior to produce dynamic trust scores.
 
+### BATI Trust Score
+
+BATI evaluates communication trust using a penalty-based approach:
+
+BATI Score = 100 − Σ(Penaltyi)
+
+Where:
+- 100 = Initial Trust Score
+- Penaltyi = Risk Penalty
+- Final score is bounded between 0 and 100
+
 ### ⚡ Automated Incident Response
 Automatically executes appropriate mitigation actions such as alert generation, device isolation, communication blocking, or access restriction based on BATI-driven risk assessment.
 
 ### 📊 Security Operations Center (SOC) Dashboard
 Provides a centralized dashboard for monitoring device status, trust evolution, alerts, security events, and overall industrial network health in real time.
+
+### 🌐 Device Discovery
+Discovers active devices within the monitored environment and maintains communication statistics for behavioral analysis.
 
 ## 🏗️ System Architecture
 
@@ -158,15 +174,45 @@ BRAIN-OT/
 ## 📅 Development Roadmap
 
 | Phase | Description | Status |
-|--------|-------------|:------:|
-| Phase 1 | Project Planning, Literature Review, Repository Setup | ✅ Completed |
-| Phase 2 | Industrial Device Monitoring Module | ⏳ Planned |
-| Phase 3 | Intrusion Detection & AI-Assisted Anomaly Detection | ⏳ Planned |
-| Phase 4 | Behavioral Adaptive Trust Index (BATI) Engine | ⏳ Planned |
-| Phase 5 | Decision Engine & Automated Response | ⏳ Planned |
-| Phase 6 | SOC Dashboard Development | ⏳ Planned |
-| Phase 7 | VVM801 Hardware Integration | ⏳ Planned |
-| Phase 8 | Testing, Evaluation & Final Demonstration | ⏳ Planned |
+|---------|----------------------------|:------:|
+| Phase 1 | Project Planning & Literature Review | ✅ Completed |
+| Phase 2 | Industrial Device Monitoring Module | ✅ Completed |
+| Phase 3 | Device Discovery Module | ✅ Completed |
+| Phase 4 | Behavioral Adaptive Trust Index (BATI) | ✅ Completed |
+| Phase 5 | Threat Decision Engine | ✅ Completed |
+| Phase 6 | IDS & AI Anomaly Detection | 🔄 In Progress |
+| Phase 7 | Automated Response Engine | ⏳ Planned |
+| Phase 8 | SOC Dashboard | ⏳ Planned |
+| Phase 9 | VVM801 Integration | ⏳ Planned |
+| Phase 10 | Testing & Validation | ⏳ Planned |
+
+## Current Achievements
+
+✅ Live Packet Capture
+
+✅ Packet Parsing
+
+✅ Device Discovery
+
+✅ BATI Trust Evaluation
+
+✅ Threat Decision Engine
+
+✅ Alert Generation
+
+✅ Network Statistics
+
+✅ GitHub Version Control
+
+✅ Technical Documentation
+
+## Datasets
+
+The project currently uses:
+
+- HAI Dataset (Industrial Process Anomaly Detection)
+- TON-IoT Dataset (Industrial Network Intrusion Detection)
+
 
 ## 🚀 Installation
 

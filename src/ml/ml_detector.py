@@ -1,5 +1,5 @@
 import joblib
-
+import pandas as pd
 
 class MLDetector:
 
@@ -13,12 +13,12 @@ class MLDetector:
 
         try:
 
-            features = [[
-                packet_info["packet_length"],
-                packet_info["destination_port"] or 0,
-                packet_info["source_port"] or 0,
-                1 if packet_info["protocol"] == "TCP" else 0
-            ]]
+            features = pd.DataFrame([{
+    "packet_length": packet_info["packet_length"],
+    "destination_port": packet_info["destination_port"] or 0,
+    "source_port": packet_info["source_port"] or 0,
+    "is_tcp": 1 if packet_info["protocol"] == "TCP" else 0
+}])
 
             prediction = self.model.predict(features)[0]
 

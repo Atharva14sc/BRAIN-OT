@@ -32,6 +32,12 @@ from device_tracker import DeviceTracker
 from bati_engine import BATIEngine
 
 from threat_decision_engine import ThreatDecisionEngine
+from device_tracker import DeviceTracker
+from bati_engine import BATIEngine
+
+from threat_decision_engine import ThreatDecisionEngine
+
+from ml_engine import MLEngine
 
 # ----------------------------------
 # Startup Banner
@@ -51,6 +57,8 @@ tracker = DeviceTracker()
 bati = BATIEngine()
 
 decision_engine = ThreatDecisionEngine()
+
+ml_engine = MLEngine()
 
 # ----------------------------------
 # Packet Processing Function
@@ -88,10 +96,9 @@ def process_packet(packet):
     )
 
     # ------------------------------
-    # ML Disabled For Now
+    # ML Detection
     # ------------------------------
 
-    threat_type = "normal"
 
     # ------------------------------
     # Decision Engine
